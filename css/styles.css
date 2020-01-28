@@ -42,7 +42,7 @@ body{
 }
 
 .icon{
-    width: 15%;
+    max-width: 20%;
 }
 
 .or::before,
