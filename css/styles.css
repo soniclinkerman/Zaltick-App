@@ -40,15 +40,6 @@ body{
     text-transform: uppercase;
 }
 
-.icons{
-    display: flex;
-  
-}
-
-.icon{
-    width: 100%;
-}
-
 .or::before,
 .or::after {
     display: inline-block;
