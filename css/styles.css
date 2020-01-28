@@ -42,10 +42,12 @@ body{
 
 .icons{
     display: flex;
-    justify-content: space-evenly;
+  
 }
 
-
+.icon{
+    width: 100%;
+}
 
 .or::before,
 .or::after {
