@@ -40,14 +40,11 @@ body{
     text-transform: uppercase;
 }
 
-.icons{
-    display: flex;
-    justify-content: space-evenly;
+.icon-mid{
+    margin: 0 2em;
+    
 }
 
-.icon{
-    width: 100%;
-}
 
 .or::before,
 .or::after {
