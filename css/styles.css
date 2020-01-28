@@ -40,6 +40,11 @@ body{
     text-transform: uppercase;
 }
 
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .or::before,
 .or::after {
     display: inline-block;
