@@ -5,12 +5,36 @@
         <link href="css/styles.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Poller+One&display=swap" rel="stylesheet">
+
+        <script type="text/javascript">
+        function writeName(){
+            var x = document.getElementById("welcome")
+            var name= document.getElementById("name")
+            var username= document.getElementById("username")
+            var password = document.getElementById("password")
+            var formContent = document.getElementById("entername")
+
+            x.innerHTML =  "<pre>" + "Welcome back " + name.value +  ".<br>" + 
+            "Your data has been saved onto the console";
+
+            console.log( "Username: " + username.value);
+            console.log( "Password: " + password.value);
+
+
+            formContent.innerHTML= ""
+
+
+        }
+        
+        
+        </script>
     </head>
 
     <body>
         <div class="container">
 
             <div class="form-layout">
+               
 
                 <div class="form-top"> 
                     <h1 class="form-title">Coliseum</h1>
@@ -29,21 +53,24 @@
 
                 </div>
 
+
                 <div class="form-sec">
-                    <form method="POST">
+                    <h3 id="welcome"></h3>
+                   
+                    <form id="entername">
                         <label>
-                            <input class="form-input" type="text" placeholder="Full Name" >
+                            <input class="form-input" type="text" placeholder="Full Name" id="name">
                         </label>
 
                         <label>
-                            <input class="form-input" type="text" placeholder="Username">
+                            <input class="form-input" type="text" placeholder="Username" id="username">
                         </label>
 
                         <label>
-                            <input class="form-input" type="password" placeholder="Password">
+                            <input class="form-input" type="password" placeholder="Password" id="password">
                         </label>
 
-                        <button class="btn btn-primary">Sign Up!</button>
+                        <button value="submit" class="btn btn-primary" onclick="writeName();">Sign Up!</button>
 
                     </form>
                 </div>
@@ -58,6 +85,8 @@
             <div>
                 <p class="form-footer">© 2020 Zaltick</p>
             </div>
+
+  
 
             
 
