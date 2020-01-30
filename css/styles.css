@@ -12,12 +12,12 @@ body{
     font-family: 'Lato', cursive;
     background-color: #F2F2F2;
     color: #404040;
-    height: 800px;
+    height: 700px;
 }
 
 .container{
-    width: 90%;
-    max-width: 1080px;
+    /* width: 90%;
+    max-width: 920px; */
     margin: auto;
 }
 
@@ -40,10 +40,6 @@ body{
     margin-bottom: 3em;
 }
 
-.login-form{
-    display: flex;
-
-}
 
 .form-title{
     font-family: 'Poller One', cursive;
