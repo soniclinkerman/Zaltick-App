@@ -14,23 +14,18 @@
             var password = document.getElementById("password")
             var formContent = document.getElementById("entername")
 
-            x.innerHTML =  "<pre>" + "Welcome back " + name.value +  ".<br>" + 
-            "Your data has been saved  <br> onto the console";
+            x.innerHTML =  "Welcome back " + username.value
 
             console.log( "Username: " + username.value);
             console.log( "Password: " + password.value);
 
-
             formContent.innerHTML= ""
-
-
         }
-        
         
         </script>
     </head>
 
-    <body>
+    <body class="login-form">
         <div class="container">
 
             <div class="form-layout">
@@ -38,28 +33,18 @@
 
                 <div class="form-top"> 
                     <h1 class="form-title">Coliseum</h1>
-                    <div class="icons">
+                    <div class="icons login-icon">
                         <img class="icon" src="icons/Shield.png"/>
                         <img class="icon-mid" src="icons/Friends.png"/>
                         <img class="icon" src="icons/Sword.png"/>
                     </div>
 
-                    <div class="bord">
-                    
-                        <p class="or">OR</p>
-                        <div class="se"></div>
-                    </div>
-
                 </div>
-
 
                 <div class="form-sec">
                     <p id="welcome"></p>
                    
                     <form id="entername">
-                        <label>
-                            <input class="form-input" type="text" placeholder="Full Name" id="name">
-                        </label>
 
                         <label>
                             <input class="form-input" type="text" placeholder="Username" id="username">
@@ -69,17 +54,15 @@
                             <input class="form-input" type="password" placeholder="Password" id="password">
                         </label>
 
-                        <button value="submit" class="btn btn-primary" onclick="writeName();">Sign Up!</button>
+                        <button value="submit" class="btn btn-primary" onclick="writeName();">Log In!</button>
 
                     </form>
                 </div>
 
                 <div class="form-section-three">
                     <img class="icon" src="icons/Coliseum Logo.png"/>
-                    <p class="form-text">Join or compete against your friends to complete daily task and challenges for glory!</p>
-                    <p class="account-text">Already have an account?</p>
-                    <p><a class="login-link" href="Sign-In.html">Log In!</a></p>
-
+                    <p class="account-text">Don't have an account?</p>
+                    <p><a class="login-link" href="index.html">Sign Up!</a></p>
                 </div>
 
         </div>

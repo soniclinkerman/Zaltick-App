@@ -12,6 +12,7 @@ body{
     font-family: 'Lato', cursive;
     background-color: #F2F2F2;
     color: #404040;
+    height: 800px;
 }
 
 .container{
@@ -33,6 +34,15 @@ body{
 .login-link{
     color: #6597FB;
     text-decoration: none;
+}
+
+.login-icon{
+    margin-bottom: 3em;
+}
+
+.login-form{
+    display: flex;
+
 }
 
 .form-title{
@@ -71,6 +81,10 @@ input {
 }
 .form-text{
     margin-bottom: 0;
+}
+
+.account-text{
+    opacity: 50%;
 }
 
 .form-sec{
