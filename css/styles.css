@@ -18,7 +18,6 @@ body{
     width: 90%;
     max-width: 1080px;
     margin: auto;
-    flex-flow: row wrap;
 }
 
 .form-layout{
