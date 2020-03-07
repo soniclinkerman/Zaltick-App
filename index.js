@@ -3,7 +3,6 @@ const bodyParser = require("body-parser")
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const app = express()
-const port = 4000
 
 mongoose.connect('mongodb+srv://soniclinkerman:Sonic123@zaltick-pq9hg.mongodb.net/accountDB', {useNewUrlParser: true,  useUnifiedTopology: true });
 
@@ -75,4 +74,7 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 4000;
 }
-app.listen(port);
+
+app.listen(port, function(){
+    console.log("Server has started")
+})
