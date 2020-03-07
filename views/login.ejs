@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+
+<div class="container">
+
+    <div class="form-layout">
+       
+
+        <div class="form-top"> 
+            <h1 class="form-title">Coliseum</h1>
+            <div class="icons login-icon">
+                <img class="icon" src="Shield.png"/>
+                <img class="icon-mid" src="Friends.png"/>
+                <img class="icon" src="Sword.png"/>
+            </div>
+
+        </div>
+
+        <div class="form-sec">
+            <p id="welcome"></p>
+           
+            <form action="/login" method="POST">
+
+                <label>
+                    <input class="form-input" type="text" placeholder="Username" name="username">
+                </label>
+
+                <label>
+                    <input class="form-input" type="password" placeholder="Password" name="password">
+                </label>
+
+                <button value="submit" class="btn btn-primary">Log In!</button>
+
+            </form>
+        </div>
+
+        <div class="form-section-three">
+            <img class="icon" src="Coliseum Logo.png"/>
+            <p class="account-text">Don't have an account?</p>
+            <p><a class="login-link" href="/register">Sign Up!</a></p>
+        </div>
+
+</div>
+
+    <div>
+        <p class="form-footer">© 2020 Zaltick</p>
+    </div>
+
+</div>
+
+<%- include('partials/header') %>
