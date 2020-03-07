@@ -61,7 +61,7 @@ app.post("/login", (req, res) => {
         else{
             if(foundUser){
                 if(foundUser.password === password) {
-                    res.render("success")
+                    res.send("Welcome " + foundUser.name)
                 }
             }
         }
