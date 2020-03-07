@@ -71,6 +71,8 @@ app.post("/login", (req, res) => {
 })
 
 
-app.listen(port, () => {
-    console.log(port)
-})
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4000;
+}
+app.listen(port);

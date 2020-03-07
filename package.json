@@ -9,6 +9,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.3"
   },
+  "engines": {
+    "node": "12.14.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
