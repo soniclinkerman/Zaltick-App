@@ -1,7 +1,9 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser")
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+const encrypt = require("mongoose-encryption");
 const app = express()
 
 mongoose.connect('mongodb+srv://soniclinkerman:Sonic123@zaltick-pq9hg.mongodb.net/accountDB', {useNewUrlParser: true,  useUnifiedTopology: true });
@@ -13,6 +15,8 @@ const accountSchema = new mongoose.Schema({
 })
 
 const Account = new mongoose.model("Account", accountSchema);
+
+accountSchema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ["password"] });
 
 app.use(express.static("public"));
 app.set("view engine", 'ejs');
