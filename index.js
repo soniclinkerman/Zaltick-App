@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser")
 const ejs = require("ejs");
@@ -14,9 +14,9 @@ const accountSchema = new mongoose.Schema({
     password: String
 })
 
-const Account = new mongoose.model("Account", accountSchema);
-
 accountSchema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ["password"] });
+
+const Account = new mongoose.model("Account", accountSchema);
 
 app.use(express.static("public"));
 app.set("view engine", 'ejs');
